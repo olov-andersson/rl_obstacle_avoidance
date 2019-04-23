@@ -3,9 +3,9 @@ Simple obstacle avoidance domain for testing RL convergence on stochastic contro
 
 ## USAGE EXAMPLE WITH OPENAI GYM: ##
 
-    # Generate custom paramerized env_id
+    # Import nth_order_integrator and generate custom paramerized env_id for Gym
     if args.env == 'NthOrderIntegratorObstaclesParam':  # Parameteric custom env
-        env_id = my_envs.nth_order_integrator.register_parametric(order=args.env_order, dim=args.env_dim, constraint_a=args.env_constr_a, dynamics_std=args.env_dynamics_std, max_steps=args.env_steps, #n$
+        env_id = nth_order_integrator.register_parametric(order=args.env_order, dim=args.env_dim, constraint_a=args.env_constr_a, dynamics_std=args.env_dynamics_std, max_steps=args.env_steps, #n$
 
     set_global_seeds(seed)
     def make_env(rank=0):
@@ -23,4 +23,4 @@ Simple obstacle avoidance domain for testing RL convergence on stochastic contro
 
  Then use your favorite RL algo on env. Results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
  
- Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, ros.org) is installed.
+ Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, www.ros.org) is installed.
