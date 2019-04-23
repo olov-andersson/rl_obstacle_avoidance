@@ -21,5 +21,5 @@ Simple obstacle avoidance domain for testing RL performance on stochastic contro
          print('Using dummy vector env.')
          env = DummyVecEnv([make_env])    
 
- # Then use your favorite RL algo on env. Results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
- # Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS is installed.
+ Then use your favorite RL algo on env. Results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
+ Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS is installed.
