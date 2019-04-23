@@ -23,4 +23,4 @@ Simple obstacle avoidance domain for testing RL convergence on stochastic contro
 
  Then use your favorite RL algo on env. Results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
  
- Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS is installed.
+ Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, ros.org) is installed.
