@@ -3,6 +3,7 @@ Simple obstacle avoidance domain for testing RL algorithm convergence on control
 
 From our paper:
 > Andersson, Olov and Patrick Doherty. "Deep RL for Autonomous Robots: Limitations and Safety Challenges." Procceedings of the European Symposium on Neural Networks (ESANN). 2019.
+
 An earlier version was also presented at the ICML'18 Workshop on Reproducible Machine Learning.
 
 ## USAGE EXAMPLE WITH OPENAI GYM: ##
