@@ -6,7 +6,7 @@ From our paper:
 
 An earlier version was also presented at the ICML'18 Workshop on Reproducible Machine Learning.
 
-## USAGE EXAMPLE WITH OPENAI GYM: ##
+## Usage Example with OpenAI Gym: ##
 
     # Prereqs:
     # Import from nth_order_integrator.py
