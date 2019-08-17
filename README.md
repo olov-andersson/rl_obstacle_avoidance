@@ -9,7 +9,7 @@ An earlier version was also presented at the ICML'18 Workshop on Reproducible Ma
 ## Usage Example with OpenAI Gym: ##
 
     # Prereqs:
-    # Import from nth_order_integrator.py (due to parameterization we load the environments dynamically into Gym)
+    # Import from nth_order_integrator.py (due to parameterization we dynamically load the Gym environment)
     # Assumes relevant env parameters are in the arg parser
     
     # Then create the paramerized environment and register an env_id for Gym
