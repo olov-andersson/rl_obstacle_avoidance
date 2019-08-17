@@ -1,5 +1,9 @@
 # rl_obstacle_avoidance
-Simple obstacle avoidance domain for testing RL convergence on stochastic control problems and multiple minima.
+Simple obstacle avoidance domain for testing RL algorithm convergence on control problems with stochastics and multiple minima. 
+
+From our paper:
+> Andersson, Olov and Patrick Doherty. "Deep RL for Autonomous Robots: Limitations and Safety Challenges." Procceedings of the European Symposium on Neural Networks (ESANN). 2019.
+An earlier version was also presented at the ICML'18 Workshop on Reproducible Machine Learning.
 
 ## USAGE EXAMPLE WITH OPENAI GYM: ##
 
@@ -24,3 +28,4 @@ Simple obstacle avoidance domain for testing RL convergence on stochastic contro
  Then use your favorite RL algo on env. Results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
  
  Optionally, the environment can be visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, www.ros.org) is installed.
+
