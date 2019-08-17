@@ -33,7 +33,9 @@ An earlier version was also presented at the ICML'18 Workshop on Reproducible Ma
          print('Using dummy vector env.')
          env = DummyVecEnv([make_env])    
 
- Then use your favorite RL algo on env. The results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
+Then use your favorite RL algo on env. The results in our paper were from PPO2, slightly modified to use the Mujoco defaults from the PPO paper, including EnvNormalize.
  
- The environment can also be conveniently visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, www.ros.org) is installed.
+The environment can also be conveniently visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, www.ros.org) is installed.
 
+There are also special scenarios (c.f. paper), but the default is just randomly moving obstacles in 2D.
+For more details see code, which is pretty self-explanatory. 
