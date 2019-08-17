@@ -37,5 +37,4 @@ Then use your favorite RL algo on env. The results in our paper were from PPO2, 
  
 The environment can also be conveniently visualized with Rviz on the /gym_deepca topic if ROS (Robot Operating System, www.ros.org) is installed.
 
-There are also special scenarios (c.f. paper), but the default is just randomly moving obstacles in 2D.
-For more details see code, which is pretty self-explanatory. Don't hesitate to contact me if you have any questions.
+See the code for reasonable default parameters. There are also special scenarios (c.f. paper), but the default is just randomly moving obstacles in 2D. The code is pretty self-explanatory, but don't hesitate to contact me if you have any questions.
