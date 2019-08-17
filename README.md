@@ -8,15 +8,19 @@ An earlier version was also presented at the ICML'18 Workshop on Reproducible Ma
 
 ## USAGE EXAMPLE WITH OPENAI GYM: ##
 
-    # Import nth_order_integrator and generate custom paramerized env_id for Gym
-    if args.env == 'NthOrderIntegratorObstaclesParam':  # Parameteric custom env
+    # Prereqs:
+    # Import from nth_order_integrator.py
+    # Assumes relevant env parameters are in the arg parser
+    
+    # Then create the paramerized environment and register an env_id for Gym
+    if args.env == 'NthOrderIntegratorObstaclesParam':  # Obstacle avoidance env w/ parameters from arg parser
         env_id = nth_order_integrator.register_parametric(order=args.env_order, dim=args.env_dim, constraint_a=args.env_constr_a, dynamics_std=args.env_dynamics_std, max_steps=args.env_steps, #n$
 
     set_global_seeds(seed)
-    def make_env(rank=0):
+    def make_env():
         env = gym.make(env_id) 
-        env.seed(seed+rank)  # Want to seed the environment too...
-        env = bench.Monitor(env, logger.get_dir() and os.path.join(logger.get_dir(), str(rank)))  # NOTE: Stores raw episode rewards and lengths
+        env.seed(seed)  # Seed the environment also
+        env = bench.Monitor(env, logger.get_dir())  # NOTE: Stores raw episode rewards and lengths
         return env
 
     if args.nparallel > 0:
