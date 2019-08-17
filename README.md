@@ -1,5 +1,5 @@
 # rl_obstacle_avoidance
-Simple obstacle avoidance domain for testing RL algorithm convergence on control problems with stochastics and multiple minima. 
+Simple obstacle avoidance domain for testing RL algorithm convergence on control problems with stochastics and multiple minima, which are common for real-world autonomous robots.  
 
 From our paper:
 > Andersson, Olov and Patrick Doherty. "Deep RL for Autonomous Robots: Limitations and Safety Challenges." Procceedings of the European Symposium on Neural Networks (ESANN). 2019.
