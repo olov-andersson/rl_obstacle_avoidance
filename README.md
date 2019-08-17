@@ -14,7 +14,8 @@ An earlier version was also presented at the ICML'18 Workshop on Reproducible Ma
     
     # Then create the paramerized environment and register an env_id for Gym
     if args.env == 'NthOrderIntegratorObstaclesParam':  # Obstacle avoidance env w/ parameters from arg parser
-        env_id = nth_order_integrator.register_parametric(order=args.env_order, dim=args.env_dim, constraint_a=args.env_constr_a, dynamics_std=args.env_dynamics_std, max_steps=args.env_steps, #n$
+        env_id = nth_order_integrator.register_parametric(order=args.env_order, dim=args.env_dim, 
+        constraint_a=args.env_constr_a, dynamics_std=args.env_dynamics_std, max_steps=args.env_steps, num_obst=args.env_obst, scenario=args.env_scenario, agent_start=args.env_agent_start, render=args.env_render, verbose=args.env_verbose)
 
     set_global_seeds(seed)
     def make_env():
